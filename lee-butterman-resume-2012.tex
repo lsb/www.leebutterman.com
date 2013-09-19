@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+\pdfpageheight=11in\pdfpagewidth=8.5in
+\usepackage[top=0.6in,bottom=0.8in,left=1in,right=0.6in]{geometry}
+\begin{document}\pagestyle{empty}
+\def\b{\noindent\textbf}\let\p=\noindent\def\i{\noindent\textit}
+\def\part#1{\vskip\baselineskip\noindent\hbox to0pt{\hss\footnotesize\sf #1\kern3ex}}
+\obeylines
+\subsection*{Lee Butterman\hfill hi@leebutterman.com}\everypar={\hangindent=\parindent}
+
+\part{Education}%
+\i{Tufts University} 2005--2009, MA Classics.
+\b{Latin, Digital Libraries, Data Mining}, Artificial Intelligence, Graphic Design, Greek.
+Thesis: Latin reading environment with adjustable interlinear vocab; advisor: {Gregory Crane}.
+
+\i{Brown University} 2001--2005, BA Computer Science and Classics/Latin with honors.
+Algorithmic analysis, computational complexity, the lambda calculus.
+Golden Age authors, the art of translation.  Thesis: \b{text-to-speech for Latin poetry}.
+
+\i{Stuyvesant High School} 1997--2001, with honors.
+Passed \b{Actuarial Exam part 1}, 1999.  Took two years of college statistics, 1999--2001.
+
+\part{Languages}%
+\b{Ruby, SQL, Regexps, JS, Haskell+QuickCheck, Python, \TeX}, Java+JUnit, C, Lisp, R.
+\b{Latin, French}, Ancient Greek.
+\b{github.com/lsb}
+
+\part{Work}%
+\i{Lookout.com} Software Engineer, Jan 2013--present.
+On the Platform and Infrastructure team. Assisted on the Ruby 1.8 to Ruby 1.9 upgrade, developed \b{predictive analytics for server-side metrics}, engineered a multi-format backwards-compatible \b{secure password storage with no downtime} more than an average deploy, co-architecting and co-developing the \b{suite of REST services} to push messages to devices; not only is this suite \b{50x~more~performant} than the current protocol, but it also \b{resists message spoofing and replay attacks}.
+
+\i{Ask--Human} Creator, Dec 2012--present.
+A \b{logically-monotonic HTTP API} over Mechanical Turk to pose questions and poll for answers, Ask--Human is being used to \b{crowdsource proofreading long texts} like books and theses.
+
+\i{NoDictionaries.com} Founder and head craftsman, Dec 2008--present.
+Everything from \b{sales calls to a publisher} in Chicago to optimizing relational database queries to \b{custom~content-aware~analytics} to minimizing page load times to field-testing/{iterating on graphic design} to curating the text corpus to handling all customer support and \b{engineering on-call}. Negotiated a deal with a Latin publisher to sell subscriptions to their textbooks in the NoDictionaries format.  75k uniques in January read 1400 hours of Latin.
+
+\i{Captricity.com} Software Engineer, Sept 2011--June 2012.
+Wrote Python backend code, optimized PostgreSQL queries, wrote Javascript+Backbone frontend code, \b{designed and implemented user interfaces} for both customers and Mechanical Turkers, \b{empirically analyzed interface performance} on Mechanical Turk, and did some support calls on a self-service data-entry service powered by advanced computer vision aided by Mechanical Turk. \b{Led creation of a spreadsheet visualization} of image data merged with textual transcription.
+
+\i{TripAdvisor.com} Software Engineer, Jan 2010--Aug 2011.
+Worked on the Java backend and the Velocity+JS+HTML+CSS frontend code, and also helped shape user experience, for the Facebook app ``Cities I've Visited'', a pinnable travel map with 1B pins and 5M new pins daily.  Lead a solo project to \b{visualize correlations between a billion pins} via R and PostgreSQL.  Worked with my team on backend and frontend code to expose this pin-based user/city knowledge on the main site via Facebook Connect and Facebook Instant Personalization.  Worked with my group on mostly-solo projects for restaurants and attractions.  Enjoyed a 100 mile/week year-round bike commute.
+
+\i{Songkick.com} Developer, June 2007--May 2008.
+Joined when it was just a database schema, built the first prototype (everything from Javascript UI interactions to Ruby scrapers of a dozen ticket websites to an original artist recommendation algorithm) in 17 days, worked on data acquisition, cdn-cacheable advertising platform, javascript applications, general web development.
+
+\i{Perseus Digital Library} Researcher, Sept 2005--May 2007.
+Created a bitmap browser font for Ancient Greek ({\tt www.poetaexmachina.net/font}), developed a Text-to-Speech system that could chant poetry in any meter (\texttt{www.poetaexmachina.net}).
+
+\i{PoetaExMachina.net} Solo creator, Sept 2005--present.
+Podcasted the Aeneid in a synthetic voice; designed a simple secure web interface.
+
+\i{Brown Classical Journal} Editor, 2003--2005.
+Reviewed, edited, and discussed submissions, outreached to faculty.
+
+\i{Independent Research} with Prof Nasir Memon at Polytechnic University, 1999--2004.
+Developed an original, efficient, error-resilient version of the data compressor BZIP.
+
+\i{Print graphic design} Brown Classical Journal, St Anthony Hall, Queer Alliance, 2002--2005.
+Led the design of high-profile publicity.  Built print and internet advertisement campaigns.
+
+\part{Papers}%
+\p Passphrase Safety: analyzing low-entropy passphrases in the browser.
+Computed low-entropy 1-, 2-, and 3-grams from the Google Books dataset via Hive, implemented space-efficient Bloom Filters from scratch in Haskell, optimized in Haskell, tested with QuickCheck, manually translated Haskell into Javascript and got it to work on the first try, designed a Backbone.js user interface.  \texttt{github.com/lsb/gcs} for the bloom filter; \texttt{github.com/lsb/passphrase-safety-ui} for the UI. (HiveQL, Haskell, JS: 0.5~kLoC.)
+
+\p Who Writes Wikipedia? An information-theoretic analysis. \texttt{http://bit.ly/who-writes-wikipedia}
+Anonymous vandalism is a big problem, three-fourths of contributions from registered users came from users who got one of their revisions reverted, and half of the top 50 contributors were bots. \texttt{github.com/lsb/ugc-contributors}, Ruby, SQL.
+
+%\p Latin word-sense disambiguation in a reading context at NoDictionaries.com.  Forthcoming.
+%Vocabulary help needs to be right to be pedagogically effective, but the words that need correct majority of important words have the fewest training examples. (Ruby, SQL, JS, HTML.)
+
+\p NoDictionaries.com: a new approach to foreign-language reading.  Forthcoming.
+Further user studies of the reading approach that pairs text with adjustable interlinear vocabulary.
+
+\p Using Normalized Google Distances as MP3 Distance measures.  Unpublished, 2007.
+Made an MP3 search engine, allowed voting on results, used an external text corpus to predict ratings better than Audioscrobbler (in 2007), realized it was mostly contributory infringment, took it down. Advisor: {Carla Brodley}. (JS, PHP: 0.5~kLoC.)
+
+\p Poeta Ex Machina: Latin Text-to-Speech.  American Philological Association, 2007.
+Greatly improving scansion and source code readability.  (Ruby, awk.)
+
+%\p Perseus-for-Print: Reading Editions of Latin and Greek texts. (forthcoming)
+%Using Machine Learning to generate commentaries for ancient texts.
+
+%\p Synchronic Scansion of Dactylic Hexameter. (forthcoming)
+%Using a corpus-based approach to augment Perseus' native scansion.
+
+\p Teaching Pronunciation with Latin Text-to-Speech.  Workshop, ACL Institute, 2005.
+Led an interactive workshop to explore the relevance of Text-to-Speech in high school Latin.\\(Awk, regex, PHP, HTML: 0.6~kLoC.)
+
+\p Avernus at Cuma.  Brown Classical Journal, 2005.  \texttt{www.poetaexmachina.net/aac}
+Created a photoessay with my images from Cuma, and Vergil's description of Cuma in the Aeneid.
+
+\p Error-Correcting Blocksorting.  DIMACS Working Group on the BWT, invited 2004.
+Added error-correction.  Optimized for speed.  Became competitive with BZIP.  (C++: 3~kLoC.)
+
+\p Durovernalia Carmina. Brown Classical Journal, 2003.
+Translated the beginning of Chaucer's Canterbury Tales into Latin metrical poetry.
+
+\p An Error-Resilient Blocksorting Compression Algorithm.  IEEE Data Compression Conference, 2003.
+Expanded into a full error-resilient compression algorithm, in linear time. (C: 0.7~kLoC.)
+
+\p Error-Resilient Blocksorting.  IEEE Data Compression Conference, 2001.
+The first error-resilient version of the Burrows-Wheeler blocksorting Transform. (C: 0.5~kLoC.)
+
+\part{etc.}%
+%\noindent Pi-based wall decor, Summer 2006.  Haskell: 0.1~kLoC.  \texttt{poetaexmachina.net/decor}
+\noindent Piano, 1995--present.  %Transcribed and taught myself the overture to the Philip Glass opera Akhnaten.
+%\noindent MP3 search engine, for Machine Learning / Data Mining, CS 250, Fall 2006. \texttt{http://vivam.us}
+\noindent Trumpet, Kingsborough College, Summer 1999--2004, Brown Commencement Band, 2002--2003.
+
+\noindent Trumpet, Piano, Guest Composer, Brooklyn Conservatory Summer Chamber Music Series, 2003.
+
+\noindent Brother, St Anthony Hall, K 2003.  Lit Mag Editor, 2004.
+
+\noindent\b{80286 assembly programming, self-taught, 1998.}
+\end{document}
